@@ -1,5 +1,9 @@
-export async function get(context, req) {
+module.exports = async function (context, req) {
     context.res = {
-        body: "getReservations working"
+        status: 200,
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: []
     };
-}
+};
